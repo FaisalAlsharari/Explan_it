@@ -1,29 +1,23 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Name:</strong>
   <%= @user.name %>
 </p>
-
 <p>
   <strong>Is tutor:</strong>
   <%= @user.is_tutor %>
 </p>
-
 <p>
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
-
 <p>
   <strong>Password:</strong>
   <%= @user.password %>
 </p>
-
 <p>
   <strong>University name:</strong>
   <%= @user.university_name %>
 </p>
-
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

@@ -1,29 +1,23 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Place:</strong>
   <%= @appointment.place %>
 </p>
-
 <p>
   <strong>Accepted:</strong>
   <%= @appointment.accepted %>
 </p>
-
 <p>
   <strong>Tutor:</strong>
   <%= @appointment.tutor %>
 </p>
-
 <p>
   <strong>Course:</strong>
   <%= @appointment.course %>
 </p>
-
 <p>
   <strong>Student:</strong>
   <%= @appointment.user_id %>
 </p>
-
 <%= link_to 'Edit', edit_appointment_path(@appointment) %> |
 <%= link_to 'Back', appointments_path %>

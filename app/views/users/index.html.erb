@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
-<%if user_signed_in?  %>
-<%if current_user.admin%>
+<%if user_signed_in? && current_user.admin%>
 <h1>Users</h1>
 <table>
   <thead>
@@ -22,15 +21,12 @@
         <td><%= link_to user.name,"/users/#{user}" %></td>
         <td><%= link_to "edit","/users/edit" %></td>
       <%end%>
-      <%end%>
       </tr>
-    <% end %>
+
    
   </tbody>
 </table>
 <%else %>
 <h2> Are you LOST!?</h2>
 
-
-<br>
-
+<%end%>

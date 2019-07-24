@@ -1,20 +1,17 @@
-<div class="text-center" >
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @course.name %>
-</p>
-
-<p>
-  <strong>Code:</strong>
-  <%= @course.code %>
-</p>
-
-<%= link_to 'Edit', edit_course_path(@course) %> |
-<%= link_to 'Back', courses_path %>
-<br>
-<%= link_to 'New Appointment', new_course_appointment_path(@course), class: "btn btn-primary" %>
-<% if current_user.is_tutor%>
-<%= link_to 'Join as a tutor', "/join/#{@course.id}", class: "btn btn-primary" %>
-<%end%>
+<div class="text-center">
+  <p id="notice"><%= notice %></p>
+  <p>
+    <strong>Name:</strong>
+    <%= @course.name %>
+  </p>
+  <p>
+    <strong>Code:</strong>
+    <%= @course.code %>
+  </p>
+  <%= link_to 'Edit', edit_course_path(@course) %> |
+  <%= link_to 'Back', courses_path %>
+  <br>
+  <%= link_to 'New Appointment', new_course_appointment_path(@course), class: "btn btn-primary" %>
+  <% if current_user.is_tutor%>
+  <%= link_to 'Join as a tutor', "/join/#{@course.id}", class: "btn btn-primary" %>
+  <%end%>

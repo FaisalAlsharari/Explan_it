@@ -1,37 +1,24 @@
 <%= form_with(model: appointment, local: true) do |form| %>
-  <% if appointment.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(appointment.errors.count, "error") %> prohibited this appointment from being saved:</h2>
-
-      <ul>
-      <% appointment.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :place %>
-    <%= form.text_field :place %>
-  </div>
-
-  <div class="field">
-    <%= form.label :accepted %>
-    <%= form.check_box :accepted %>
-  </div>
+<% if appointment.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(appointment.errors.count, "error") %> prohibited this appointment from being saved:</h2>
+  <ul>
+    <% appointment.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
 <div class="field">
-<%= form.label :tutor, "Choose a tutor?" %> 
-<%= form.collection_select :tutor, @course.users, :email, :email %>
-
-
-    <%= form.hidden_field :course, :value => @course.id %>
-  
-
-    <%= form.hidden_field :user_id, :value => current_user.id %>
-
-
+  <%= form.label :place %>
+  <%= form.text_field :place %>
+</div>
+<div class="field">
+  <%= form.label :tutor, "Choose a tutor?" %>
+  <%= form.collection_select :tutor, @course.user, :name, :name %>
+  <%= form.hidden_field :course, :value => @course.id %>
+  <%= form.hidden_field :user_id, :value => current_user.id %>
   <div class="actions">
     <%= form.submit %>
   </div>
-<% end %>
+  <% end %>
