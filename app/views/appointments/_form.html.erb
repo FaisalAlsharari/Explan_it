@@ -15,7 +15,7 @@
 </div>
 <div class="field">
   <%= form.label :tutor, "Choose a tutor?" %>
-  <%= form.collection_select :tutor, @course.user, :name, :name %>
+  <%= form.collection_select :tutor, @course.users, :name, :name %>
   <%= form.hidden_field :course, :value => @course.id %>
   <%= form.hidden_field :user_id, :value => current_user.id %>
   <div class="actions">

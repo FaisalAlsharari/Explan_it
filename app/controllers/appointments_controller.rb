@@ -20,6 +20,7 @@ class AppointmentsController < ApplicationController
 
   # GET /appointments/1/edit
   def edit
+    @course= Course.find(Appointment.find(params[:id]).course)
   end
 
   # POST /appointments
