@@ -18,19 +18,3 @@
 //= require bootstrap-sprockets
 //= require_tree .
 //Override the default confirm dialog by rails
-$(() =>{
-$('#sub-button').on('click', function(e) {
-    console.log("swal")
-    Swal.fire({
-        title: 'Good job!',
-        text: 'Do you want to continue',
-        type: 'success',
-        icon: "success",
-        confirmButtonText: 'You clicked the button!',
-        
-
-        
-    })
-  }
-);
-})
