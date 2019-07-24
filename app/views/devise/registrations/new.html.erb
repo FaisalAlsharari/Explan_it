@@ -1,0 +1,41 @@
+<div class="text-center">
+<img class="mb-4" src="https://ui-ex.com/images/amended-clipart-federalism-6.png" alt="" width="180" height="120"><br>
+<h1>Sign up</h1><br>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <div class="field">
+     <h1 class="h3 mb-3 font-weight-normal"> 
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", :class =>"form-control", placeholder:"email",:class=>"col-md-2" %>
+  </div>
+  <div class="field">
+  <%= f.label :name %><br />
+  <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+</div>
+  <div class="field">
+    <%= f.label :is_tutor %>
+    <%= f.check_box :is_tutor %>
+  </div>
+  <div class="field">
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password", :class =>"form-control", placeholder:"Password" ,:class=>"col-md-2"%>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" , :class =>"form-control", placeholder:"password Confirmation" ,:class=>"col-md-2"%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up", :class=>"btn btn-lg btn-primary btn-block", :id => "sub-button" ,:class=>"col-md-1"%> 
+     <input type="checkbox" value="remember-me" > Remember me
+    </label>
+    <p class="mt-5 mb-3 text-muted">© 2017-2019</p>
+
+  </div>
+<% end %>
+<%= render "devise/shared/links" %>
+
+</div>
+
+

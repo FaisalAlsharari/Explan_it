@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+<%if user_signed_in?  %>
+<%if current_user.admin%>
+<h1>Users</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Is tutor</th>
+      <th>Email</th>
+      <th>University name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.is_tutor %></td>
+        <td><%= user.email %></td>
+        <td><%= user.university_name %></td>
+        <td><%= link_to user.name,"/users/#{user}" %></td>
+        <td><%= link_to "edit","/users/edit" %></td>
+      <%end%>
+      <%end%>
+      </tr>
+    <% end %>
+   
+  </tbody>
+</table>
+<%else %>
+<h2> Are you LOST!?</h2>
+
+
+<br>
+

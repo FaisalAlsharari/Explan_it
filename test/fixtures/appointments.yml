@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time: 2019-07-22 12:38:41
+  place: MyString
+  accepted: false
+  tutor: 1
+  course: 1
+  student: one
+
+two:
+  time: 2019-07-22 12:38:41
+  place: MyString
+  accepted: false
+  tutor: 1
+  course: 1
+  student: two
