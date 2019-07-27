@@ -38,8 +38,8 @@ My life as a student  I had seen almost all students having a real problem which
 #### Authentication:
 - [x] User must be able to sign up 
 - [x] User must be able to sign in 
+- [x] User must be able to sign out
 - [x] User must be able to change password 
-- [x] User must be able to sign out 
 
 
 
