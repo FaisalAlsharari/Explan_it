@@ -16,7 +16,7 @@ My life as a student  I had seen almost all students having a real problem which
 
  # Website Homepage Img:
 
- <p align="center"><img src="./website-homepage/home.png" width="800" height="750" ></p>
+ <p align="center"><img src="./website-homepage/home.png" width="900" height="750" ></p>
 
 
 ### Website Homepage link:
