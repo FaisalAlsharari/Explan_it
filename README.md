@@ -1,4 +1,4 @@
-# Faisal Alsharari-project-name- Explain_it:
+# Project-name- Explain_it:
 
 ## We believe that a great tutor does more than just teach.
 
