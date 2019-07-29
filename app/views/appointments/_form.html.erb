@@ -18,7 +18,9 @@
   <%= form.collection_select :tutor, @course.users, :name, :name %>
   <%= form.hidden_field :course, :value => @course.id %>
   <%= form.hidden_field :user_id, :value => current_user.id %>
+  <%= form.hidden_field :accepted, :value => false %>
   <div class="actions">
     <%= form.submit %>
   </div>
   <% end %>
+  

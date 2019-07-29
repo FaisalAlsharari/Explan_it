@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'homes#home'
+  get "/:id/accept", to: "appointments#accept"
+
   resources :appointments
   resources :courses do 
     resources :appointments

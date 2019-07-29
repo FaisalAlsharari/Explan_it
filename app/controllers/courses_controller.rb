@@ -27,7 +27,9 @@ class CoursesController < ApplicationController
 
   def jointutor
 @course = Course.find(params[:id])
-@course.update_attribute(:user_ids, current_user.id)
+user_arr = @course.user_ids
+user_arr.push(current_user.id)
+@course.update_attribute(:user_ids, user_arr)
 redirect_to request.referrer
   end 
   # POST /courses

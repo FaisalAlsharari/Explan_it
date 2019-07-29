@@ -16,13 +16,22 @@
       <% @appointments.each do |appointment| %>
       <tr>
         <td><%= appointment.place %></td>
-        <td><%= appointment.accepted %></td>
+        <td><% if appointment.accepted %>
+        <%="Accepted"%>
+        <%else %>
+        <%="Pending"%>
+        <%end%>
+        </td>
         <td><%= appointment.tutor %></td>
         <td><%= Course.find(appointment.course).name %></td>
         <td><%= appointment.user.name %></td>
         <td><%= link_to 'Show', appointment %></td>
+        <%if !current_user.is_tutor%>
         <td><%= link_to 'Edit', edit_appointment_path(appointment) %></td>
         <td><%= link_to 'Destroy', appointment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%else%>
+        <td><%= link_to 'Accept', "/#{appointment.id}/accept" %></td>
+        <%end%>
       </tr>
       <% end %>
     </tbody>

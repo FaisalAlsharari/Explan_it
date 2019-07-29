@@ -85,3 +85,4 @@ production:
   database: explain_it_production
   username: explain_it
   password: <%= ENV['EXPLAIN_IT_DATABASE_PASSWORD'] %>
+  

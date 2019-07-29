@@ -1,10 +1,17 @@
 class AppointmentsController < ApplicationController 
-  before_action :set_appointment, only: [:show,  :edit,  :update,  :destroy]
+  before_action :set_appointment, only: [:show,  :edit,  :update,  :destroy, :accept]
   before_action :authenticate_user!
   # GET /appointments
   # GET /appointments.json
   def index
+    if current_user.is_tutor
+    @appointments = Appointment.where(tutor: current_user.name)
+
+
+    else 
     @appointments = Appointment.where(user_id: current_user.id)
+
+    end 
   end
 
   # GET /appointments/1
@@ -64,6 +71,11 @@ class AppointmentsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+def accept
+  @appointment.update_attribute(:accepted, true)
+  redirect_to request.referrer
+end 
 
   private
     # Use callbacks to share common setup or constraints between actions.
