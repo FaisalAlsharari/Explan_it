@@ -16,7 +16,7 @@
 
  # Website Homepage Img:
 
- <p align="center"><img src="./website-homepage/Home.png" width="900" height="750" ></p>
+ <p align="center"><img src="./website-homepage/home.png" width="900" height="750" ></p>
 
 
 ### Website Homepage link:
