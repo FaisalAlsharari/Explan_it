@@ -1,224 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+
+</head>
+
 <body>
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark"><br>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+ 
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 mx-auto">
+          <h1 class="mb-5">نحن نؤمن ان جميع الطلاب بأاستطاعتهم ان يفعلو اكثر من مجرد التعليم</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+         
+              <div class="col-12 col-md-12 mb-2 mb-md-0">
+               
+                <%=link_to 'أنظم الينا الان', appointments_path, class: "btn btn-dark text-white "%>   
+              </div>
+          
+            </div>
       </div>
-    </nav>
-  </header>
-  <main role="main">
-    <div id="myCarousel" class="carousel slide pointer-event" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-            <rect width="100%" height="100%" fill="#777"></rect>
-          </svg>
-          <div class="container">
-            <div class="carousel-caption text-center">
-              <h1>We believe that a great tutor dose more than just teach!</h1>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-            <rect width="100%" height="100%" fill="#777"></rect>
-          </svg>
-          <div class="container">
-            <div class="carousel-caption text-center">
-              <h1>Study for Better Future</h1>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-            <rect width="100%" height="100%" fill="#777"></rect>
-          </svg>
-          <div class="container">
-            <div class="carousel-caption text-center">
-              <h1>Sign up now </h1>
-              <%=link_to 'Join in our school', appointments_path, class: "btn btn-primary"%>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-    <div class="container marketing">
-      <!-- Three columns of text below the carousel -->
+  </header>
+
+  <!-- Testimonials -->
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">كيف يساعدني برنامج اشرحها </h2>
       <div class="row">
         <div class="col-lg-4">
-          <img src="https://cdn0.iconfinder.com/data/icons/admin-panel-glyph-black/2048/600_-_Stats-512.png" width="220" height="130">
-          <h3>Improves academic performance</h3>
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="true">
-            More Information
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Tutoring will prepare you for tests and exams.</a>
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="https://img.icons8.com/bubbles/2x/question-mark.png" alt="">
+            <h5>التشجيع في طرح الأسئلة</h5>
+            <p class="font-weight-light mb-0">سيساعدك التدريس في طرح الأسئلة سواء كانت كبيرة أم صغيرة</p>
           </div>
         </div>
-        <!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img src="https://www.eliteib.co.uk/images/icons/academictutors.svg" width="220" height="130">
-          <h3> Helps overcome learning obstacles</h3>
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="true">
-            More Information
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Tutor will specifically target whichever aspect of learning<br>he or she
-              is having troubles with, whether it’s writing, math, language, or reading.</a>
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Books_Flat_Icon_Vector.svg/1024px-Books_Flat_Icon_Vector.svg.png" alt="">
+            <h5>المساعده في التغلب على عقبات التعلم</h5>
+            <p class="font-weight-light mb-0">يستهدف المعلم المشكلات على وجه التحديد سواء كانت الكتابة أو الرياضيات أو اللغة أو القراءة</p>
           </div>
         </div>
-        <!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img src="https://cdn2.iconfinder.com/data/icons/business-management-5/256/Business_Meeting-512.png"
-            width="160" height="130">
-          <h4>Encourages the freedom to ask questions</h4>
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="true">
-            More Information
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">At school, you may not always feel comfortable asking questions<br>in
-              front of your peers.Tutoring will help teach you to be comfortable<br>asking questions,big or small,
-              without feeling self-conscious.</a>
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="https://www.latutors123.com/wp-content/uploads/2015/12/academic-icon.png" alt="">
+            <h5>تحسين الأداء الأكاديمي</h5>
+            <p class="font-weight-light mb-0">سيقوم المعلم بإعدادك للاختبارات والامتحانات</p>
           </div>
         </div>
-        <!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+      </div>
+    </div>
+  </section>
 
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-6">
-          <h2 class="featurette-heading">How it works?</h2>
-          <p class="lead">It’s dead easy. Just follow up the 6 steps:<br>
-          Step 1: Click on Join in our School  It's in the top of the navbar.<br>
-          Step 2: Click on Sign up check box if you only a tutor!.<br>
-          Step 3: Click on View all courses to show up the courses.<br>
-          step 4: Click on Show to make an appointments.<br>
-          Step 5: Click on New Appointments then write your university, choose a tutor if there is more then one,then Click on creat Appointments.<br>
-          Step 6: Now wait for your tutor to Accepted your appointment!.</p>
-        </div>
-        <div class="col-md-5">
-          <img src="https://tutorhub.com/assets/illustrations/illus-brain-d742563f57fe6f7887e73602b5d4a934.png"
-            width="180" height="180">
+  <!-- Image Showcases -->
+  <section class="showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-1 order-lg-2 text-white showcase-img"><%= image_tag("a3.png")%></div> 
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>أشرحها</h2>
+          <p class="lead mb-0">  اشرحها برنامج ينم خلاله تعيين كل الطلبه المتفوقين بفهم كل ماده على حده وتعيينهم كمعلمين  وهذا عن طريق فتح برنامج للتواصل بين السائل والمجيب اي تواصل حي بين الطلبه يتم تخصيص ساعات الفراغ لدى الطلاب وتعيينهم كمعلمين ليستطيعو شرح الدروس للمستقبل الاخر   </p>
         </div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Who it works for?</h2>
-          <p class="lead">Anyone studying inside or outside formal education. Our customers include everyone from
-            univerisity or out univerisity.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <img src="https://tutorhub.com/assets/illustrations/illus-testimonials-01737f56088e95cf059c8aa4dd164b96.png"
-            width="350" height="300">
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img"><%= image_tag("reg.png")%></div> 
+        <div class="col-lg-6 my-auto showcase-text">
+          <h2>كيفية التسجيل</h2>
+          <p class="lead mb-0">بااربع خطوات بسيطة وسهله تستطيع التسجيل كمعلم لأضافة المواد ومتابعه الطلبات او كمتعلم لتبحث عن معلمك وتقوم بالتسجيل  </p>
         </div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Explain it.</h2>
-          <p class="lead">Your chance to be part of our School Get paid as a tutor! and earned your own certificate!.
-            The timetable of Explain it covers all the main topics and revision which we know students look for help
-            with.</p>
-        </div>
-        <div class="col-md-5">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQQvWn-2goaUqwwiBOkH0a3Vp1fDeI59tfe0ELWVvSKYCOhWbgCw"
-            width="350" height="200">
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img"><%= image_tag("s0.png")%></div> 
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>فرصتك </h2>
+          <p class="lead mb-0">فرصتك لتكون جزءا من مدرستنا و الحصول على مبالغ مالية كمعلم! ايضا شهادة خاصة بك! هنا في اشرحها يستطيع المعلمون شرح  المواضيع الرئيسية والمراجعات التي يبحث عنها الطلاب</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-    </div><!-- /.container -->
-
-    <!-- FOOTER -->
-    <!-- Footer -->
-    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
-
-      <!-- Footer Links -->
-      <div class="container text-center text-md-left">
-
-        <!-- Grid row -->
-        <div class="row">
-
-          <hr class="clearfix w-100 d-md-none">
-
-          <hr class="clearfix w-100 d-md-none">
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-
-            <!-- Contact details -->
-            <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <p>
-                  <i class="fas fa-home mr-3"></i>Saudi Arabia &hearts;</p>
-              </li>
-            </ul>
-
+   <!-- Bottom icons -->
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">ماذا تنتظر ؟</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="https://cdn1.iconfinder.com/data/icons/artificial-intelligence-color-line-vol-2-1/512/MACHINE_LEARNING-512.png" alt="">
+            <h5>ابدا بالتعلم </h5>
           </div>
-
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-
-            <!-- Social buttons -->
-            <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-            <a href="https://twitter.com/Faisal_fj_90?lang=ar" target="_blick">My Twitter Page</a>
-          </div>
-          <!-- Grid column -->
-
         </div>
-        <!-- Grid row -->
-
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="https://cdn3.iconfinder.com/data/icons/e-learning-flat-education-technology/512/Schedule_class-512.png" alt="">
+            <h5>فم بااختيار الموعد المناسب لك</h5>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="https://cdn1.iconfinder.com/data/icons/corporate-business-color-iconset/48/search-512.png" alt="">
+            <h5>ابحث عن معلمك </h5>
+          </div>
+        </div>
       </div>
-      <!-- Footer Links -->
+    </div>
+  </section>
 
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3"> Copyright © 2019-2020
+  <!-- Copyright -->
+  <footer>
        <div class="footer-Created text-center">Created with &hearts; by <span class="name">Faisal</span>
+       <a href="https://twitter.com/Faisal_fj_90?lang=ar" target="_blick">My Twitter Page</a>  
+      <div class="footer-copyright text-center py-3"> Copyright © 2019-2020
         <a href="https://mdbootstrap.com/education/bootstrap/"></a> <br>
-        <%=link_to 'Back to top', root_path, class: "btn btn-primary" %>
+        <%# <%=link_to 'Back to top', root_path, class: "btn btn-primary" %> 
          </div>
       </div>
-      <!-- Copyright -->
-
-
     </footer>
     <!-- Footer -->
   </main>
 </body>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

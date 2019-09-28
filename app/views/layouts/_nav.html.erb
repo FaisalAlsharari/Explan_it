@@ -1,15 +1,16 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
+
         <ul class="navbar-nav mr-auto">
             <%if user_signed_in?%>
             <li class="nav-item">
                 <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class: 'nav-item nav-link active' %>
             </li>
             <%end%>
+            <%if user_signed_in?%>
+            <li clas="nav-item2">
+            <li>
+          <%= link_to 'Back', appointments_path , class: "btn btn-primary" %>
+          </li>
+          <%end%>
             <li class="nav-item">
             </li>
         </ul>

@@ -1,3 +1,4 @@
+
 <div class="text-center">
   <p id="notice"><%= notice %></p>
   <p>
@@ -8,10 +9,11 @@
     <strong>Code:</strong>
     <%= @course.code %>
   </p>
+  <!-- I have to make it only Admain can edit this cours -->
   <%= link_to 'Edit', edit_course_path(@course) %> |
   <%= link_to 'Back', courses_path %>
   <br>
-  <%= link_to 'New Appointment', new_course_appointment_path(@course), class: "btn btn-primary" %>
+  <%= link_to 'تأكيد الموعد', new_course_appointment_path(@course), class: "btn btn-primary" %>
   <% if current_user.is_tutor%>
   <%= link_to 'Join as a tutor', "/join/#{@course.id}", class: "btn btn-primary" %>
   <%end%>

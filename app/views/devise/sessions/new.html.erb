@@ -5,9 +5,10 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 login-sec">
+      <br>
         <div class="text-center">
-          <h1> WELOCOME BACK</h1> <br>
-          <h2 class="text-center">Login Now</h2>
+          <h1> مرحبا بك</h1> <br>
+          <h2 class="text-center">سجل دخولك</h2>
           <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="field">
             <%= f.label :email , :class=> "text-uppercase"%><br />
@@ -37,6 +38,7 @@
         </div>
 
       </div>
+           
       <div class="col-md-8 banner-sec">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -44,13 +46,14 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
+           <br> <br>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
               <img class="d-block img-fluid" src="https://static.pexels.com/photos/33972/pexels-photo.jpg"
                 alt="First slide">
               <div class="carousel-caption d-none d-md-block">
                 <div class="banner-text">
-                  <h2>Tutor</h2>
+                  <h2>معلم</h2>
                 </div>
               </div>
             </div>
@@ -59,9 +62,8 @@
                 alt="First slide">
               <div class="carousel-caption d-none d-md-block">
                 <div class="banner-text">
-                  <h2>What does a Tutor do?</h2>
-                  <p>Tutor can provides academic support with an expertise that will get you where you want to go. Here
-                    you will find the perfect tutor that can help you to get to the next level in your education.</p>
+                 <h2>ماذا  يفعل المعلم؟</h2>
+                  <p>يمكن للمعلم أن يوفر الدعم الأكاديمي بخبرة من شأنها أن تجعلك واثق اينما ذهبت.ايضا يمكنه مساعدتك في الوصول إلى المستوى التالي في تعليمك.</p>
                 </div>
               </div>
             </div>
@@ -70,8 +72,8 @@
                 alt="First slide">
               <div class="carousel-caption d-none d-md-block">
                 <div class="banner-text">
-                  <h2>Still Waiting ?</h2>
-                  <p>Join our Team of Tutor</p>
+                <h2>لازلت تنتظر !؟</h2>
+                  <p>انظم الى فريفنا التعليمي</p>
                 </div>
               </div>
             </div>
